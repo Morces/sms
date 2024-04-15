@@ -1,0 +1,17 @@
+import React from "react";
+import { TR, TH } from "../../../../../../../../Components/Table";
+
+const TableHeader = () => {
+  const head = ["Admission No", "Student Name ", "Grade", "Balance", "Gender"];
+  return (
+    <div>
+      <TR>
+        {head.map((v, i) => (
+          <TH key={i} w={100 / 6} label={v} />
+        ))}
+      </TR>
+    </div>
+  );
+};
+
+export default TableHeader;
